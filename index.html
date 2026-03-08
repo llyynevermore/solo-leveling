@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYSTEM: Daily Quests</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="system-container">
+        <header class="system-header">
+            <div class="header-title">SYSTEM</div>
+            <div class="header-subtitle">PLAYER STATUS: ACTIVE</div>
+        </header>
+
+        <section class="status-window">
+            <div class="player-info">
+                <h2>PLAYER: ILHAM</h2>
+                <div class="level-badge">LV <span id="player-level">1</span></div>
+            </div>
+            <div class="exp-bar-container">
+                <div class="exp-label"><span>EXP</span> <span id="exp-text">0/100</span></div>
+                <div class="exp-bar">
+                    <div class="exp-fill" id="exp-fill"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quest-window">
+            <div class="quest-header">
+                <h3>[DAILY QUEST: PREPARING TO BECOME THE STRONGEST]</h3>
+                <p>Status: <span id="quest-status">Incomplete</span></p>
+            </div>
+
+            <div class="quest-list" id="quest-list">
+                <!-- Habits will be rendered here via JS -->
+            </div>
+
+            <div class="add-quest-form">
+                <input type="text" id="new-quest-input" placeholder="Add new training quest..." autocomplete="off">
+                <button id="add-quest-btn">ADD QUEST</button>
+            </div>
+        </section>
+
+        <div class="system-notification" id="system-notification">
+            [SYSTEM MESSAGE] Level Up!
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
